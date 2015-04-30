@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.dev155.linksusdemo.SquareImageView
+        android:id="@+id/recent_added_in_directory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/recent_added_in_directory"
+        android:background="#75000000"
+        android:orientation="horizontal" >
+
+        <!-- android:background="#754099FF" -->
+
+        <TextView
+            android:id="@+id/textView_directory_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:ellipsize="end"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/number_of_media_in_directory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:textColor="#FFFFFF"
+            android:paddingRight="2dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="7sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_new_design_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <com.dev155.linksusdemo.PagerSlidingTabStrip
+        android:id="@+id/tabs_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".LinksMainActivity"  />
+
+</LinearLayout>
